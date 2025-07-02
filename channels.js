@@ -11,6 +11,15 @@ function generateChannelId(name) {
 // The default list of channels
 const defaultChannelList = [// --- Existing Channels ---
 {
+    name: "Cinema One",
+    manifest: 'http://reusora.org/mpd/index.mpd',
+    drm: {
+        type: 'clearkey',
+        keyId: '58d0e56991194043b8fb82feb4db7276',
+        key: 'd68f41b59649676788889e19fb10d22c'
+    }
+}, 
+{
     name: "Cartoon Network HD",
     manifest: 'https://qp-pldt-live-grp-12-prod.akamaized.net/out/u/dr_cartoonnetworkhd.mpd',
     image: 'https://static.wikia.nocookie.net/logopedia/images/d/d9/Cartoon_Network_2010.svg/revision/latest?cb=20200617213702',
@@ -29,16 +38,8 @@ const defaultChannelList = [// --- Existing Channels ---
         key: 'aab1df109d22fc5d7e3ec121ddf24e5f'
     }
 }, {
-    name: "Cinema One",
-    manifest: 'http://reusora.org/mpd/index.mpd',
-    drm: {
-        type: 'clearkey',
-        keyId: '58d0e56991194043b8fb82feb4db7276',
-        key: 'd68f41b59649676788889e19fb10d22c'
-    }
-}, {
     name: "GMA 7",
-    manifest: 'https://proxy.reusora.org/api/manifest/1093.mpd',
+    manifest: 'https://proxy.reusora.org/phtv/api/1093.mpd',
     drm: {
         type: 'widevine',
         licenseUri: CONVRG_LICENSE_URI
@@ -47,14 +48,14 @@ const defaultChannelList = [// --- Existing Channels ---
 }, // Example Image URL
 {
     name: "GTV (CON)",
-    manifest: 'https://proxy.reusora.org/api/manifest/1164.mpd',
+    manifest: 'https://proxy.reusora.org/phtv/api/1164.mpd',
     drm: {
         type: 'widevine',
         licenseUri: CONVRG_LICENSE_URI
     }
 }, {
     name: "Jeepney TV (CON)",
-    manifest: 'https://proxy.reusora.org/api/manifest/1250.mpd',
+    manifest: 'https://proxy.reusora.org/phtv/api/1250.mpd',
     drm: {
         type: 'widevine',
         licenseUri: CONVRG_LICENSE_URI
@@ -69,56 +70,56 @@ const defaultChannelList = [// --- Existing Channels ---
     }
 }, {
     name: "PBO (CON)",
-    manifest: 'https://proxy.reusora.org/api/manifest/1078.mpd',
+    manifest: 'https://proxy.reusora.org/phtv/api/1078.mpd',
     drm: {
         type: 'widevine',
         licenseUri: CONVRG_LICENSE_URI
     }
 }, {
     name: "SOLAR SPORTS (CON)",
-    manifest: 'https://proxy.reusora.org/api/manifest/1081.mpd',
+    manifest: 'https://proxy.reusora.org/phtv/api/1081.mpd',
     drm: {
         type: 'widevine',
         licenseUri: CONVRG_LICENSE_URI
     }
 }, {
     name: "PREMIER FOOTBALL (CON)",
-    manifest: 'https://proxy.reusora.org/api/manifest/1127.mpd',
+    manifest: 'https://proxy.reusora.org/phtv/api/1127.mpd',
     drm: {
         type: 'widevine',
         licenseUri: CONVRG_LICENSE_URI
     }
 }, {
     name: "USA TODAY (CON)",
-    manifest: 'https://proxy.reusora.org/api/manifest/1199.mpd',
+    manifest: 'https://proxy.reusora.org/phtv/api/1199.mpd',
     drm: {
         type: 'widevine',
         licenseUri: CONVRG_LICENSE_URI
     }
 }, {
     name: "EUROSPORT (CON)",
-    manifest: 'https://proxy.reusora.org/api/manifest/1325.mpd',
+    manifest: 'https://proxy.reusora.org/phtv/api/1325.mpd',
     drm: {
         type: 'widevine',
         licenseUri: CONVRG_LICENSE_URI
     }
 }, {
     name: "ANIMAL PLANET (CON)",
-    manifest: 'https://proxy.reusora.org/api/manifest/1335.mpd',
+    manifest: 'https://proxy.reusora.org/phtv/api/1335.mpd',
     drm: {
         type: 'widevine',
         licenseUri: CONVRG_LICENSE_URI
     }
 }, {
     name: "HISTORY CHANNEL (CON)",
-    manifest: 'https://proxy.reusora.org/api/manifest/1074.mpd',
+    manifest: 'https://proxy.reusora.org/phtv/api/1074.mpd',
     drm: {
         type: 'widevine',
         licenseUri: CONVRG_LICENSE_URI
     }
 }, {
     name: "RPTV (CON)",
-    manifest: 'https://proxy.reusora.org/api/manifest/1094.mpd',
+    manifest: 'https://proxy.reusora.org/phtv/api/1094.mpd',
     drm: {
         type: 'widevine',
         licenseUri: CONVRG_LICENSE_URI
@@ -542,7 +543,7 @@ const defaultChannelList = [// --- Existing Channels ---
     }
 }, {
     name: "Cinema World (CON)",
-    manifest: 'https://proxy.reusora.org/api/manifest/1158.mpd',
+    manifest: 'https://proxy.reusora.org/phtv/api/1158.mpd',
     drm: {
         type: 'widevine',
         licenseUri: CONVRG_LICENSE_URI
