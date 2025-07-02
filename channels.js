@@ -1,7 +1,7 @@
 // Constants used within the channel list
-const CONVRG_MANIFEST_BASE = 'https://convrgelive.reusora.org/001/2/';
-const CONVRG_MANIFEST_SUFFIX = '/manifest.mpd?virtualDomain=001.live_hls.zte.com&IASHttpSessionId=OTT';
-const CONVRG_LICENSE_URI = 'https://convrgkey.reusora.org/widevine/?deviceId=02:00:00:00:00:00';
+//const CONVRG_MANIFEST_BASE = 'https://convrgelive.reusora.org/001/2/';
+//const CONVRG_MANIFEST_SUFFIX = '/manifest.mpd?virtualDomain=001.live_hls.zte.com&IASHttpSessionId=OTT';
+//const CONVRG_LICENSE_URI = 'https://convrgkey.reusora.org/widevine/?deviceId=02:00:00:00:00:00';
 
 // Helper to generate IDs (can be used here or imported if needed elsewhere)
 function generateChannelId(name) {
